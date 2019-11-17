@@ -1,19 +1,19 @@
 <!----------Make By YourName---------------->
  <template>
 <div>
-    <formhomeadmin/>
+    <formlistpetion/>
     
 </div>
 </template>
 
     <script>
     import { get,sync,call } from "vuex-pathify"; 
-    import formhomeadmin from "../components/homeadmin";
+    import formlistpetion from "../components/listpetion";
 export default {
     name: 'Root',
     /*-------------------------Load Component---------------------------------------*/
     components: {
-        formhomeadmin
+        formlistpetion
     },
   /*-------------------------Set Component---------------------------------------*/
 props:{

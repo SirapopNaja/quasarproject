@@ -1,19 +1,19 @@
 <!----------Make By YourName---------------->
  <template>
 <div>
-    <formhomeadmin/>
+    <formRequestnumber/>
     
 </div>
 </template>
 
     <script>
     import { get,sync,call } from "vuex-pathify"; 
-    import formhomeadmin from "../components/homeadmin";
+    import formRequestnumber from "../components/Requestnumber";
 export default {
     name: 'Root',
     /*-------------------------Load Component---------------------------------------*/
     components: {
-        formhomeadmin
+        formRequestnumber
     },
   /*-------------------------Set Component---------------------------------------*/
 props:{

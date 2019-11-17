@@ -22,6 +22,32 @@ const routes = [
     name:'homeadmin',
     component: () => import('../pages/homeadmin.vue')
   },
+  {
+    path: '/petitionQueue',
+    name:'petitionQueue',
+    component: () => import('../pages/petitionQueue')
+  },
+  {
+    path: '/Requestnumber',
+    name:'Requestnumber',
+    component: () => import('../pages/Requestnumber')
+  },
+  {
+    path: '/homeuser',
+    name:'homeuser',
+    component: () => import('../pages/homeuser')
+  },
+  {
+    path: '/listpetion',
+    name:'listpetion',
+    component: () => import('../pages/listpetion')
+  },
+  {
+    path: '/listqueue',
+    name:'listqueue',
+    component: () => import('../pages/listqueue')
+  },
+
 ]
 
 // Always leave this as last one

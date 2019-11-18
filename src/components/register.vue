@@ -9,12 +9,12 @@
     <div class="col-3"></div>
     </div><br>
     <div style="">Register</div><br>
-    <form @submit.prevent="()=>{}">
+    <form @submit.prevent="register()">
 
 
-        <q-input bg-color="white"  type="name" required square outlined label="ชื่อ" /><br>
-        <q-input bg-color="white"  type="password" required square outlined label="รหัสผ่าน" /><br>
-        <q-input bg-color="white"  required square outlined label="อีเมลล์" /><br>
+        <q-input bg-color="white" v-model="form.name" type="name" required square outlined label="ชื่อ" /><br>
+        <q-input bg-color="white" v-model="form.password" type="password" required square outlined label="รหัสผ่าน" /><br>
+        <q-input bg-color="white" v-model="form.email" required square outlined label="อีเมลล์" /><br>
         <q-btn  type="submit" style="width:100%;" color="primary" label="ยืนยัน" />
     </form>
 <br>
@@ -61,7 +61,7 @@ props:{
     /*-------------------------DataVarible---------------------------------------*/
     data() {
     return {
-
+        form :{},
         };
     },
     /*-------------------------Run Methods when Start this Page------------------------------------------*/
@@ -75,13 +75,23 @@ props:{
     },
     /*-------------------------Vuex Methods and Couputed Methods------------------------------------------*/
     computed:{
-        
+        ...sync("user/*")
 },
     /*-------------------------Methods------------------------------------------*/
 methods:{
+    ...call("user/*"),
     
     /******* Methods default run ******/
-     
+    async register(){
+      let check = await this.user_register(this.form);
+      if(check){
+        this.form= {};
+        alert('ok')
+        this.$router.replace('/login'); 
+      }else{
+        alert('error')
+      }
+    } ,
     load:async function(){
 }
 },

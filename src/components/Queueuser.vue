@@ -21,7 +21,7 @@
      <div class="q-pa-md row items-start q-gutter-md">
     <q-card class="my-card">
       <q-card-section class="bg-primary text-white">
-        <div class="text-h6">name1</div>
+        <div class="text-h6">AB011</div>
         <div class="text-subtitle2">เวลา 15.00</div>
       </q-card-section>
 

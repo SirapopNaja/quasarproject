@@ -18,14 +18,20 @@
         <q-route-tab to="/Queueuser" label="ข้อมูลคิว" />
       </q-tabs>
     </q-header><br><br><br><br><br><br>
-    <div class="q-pa-md">
-    <div class="q-gutter-md row items-start">
-       <q-input v-model="time" filled type="time" hint="Native time" />
+     <div class="q-pa-md row items-start q-gutter-md">
+    <q-card class="my-card">
+      <q-card-section class="bg-primary text-white">
+        <div class="text-h6">name1</div>
+        <div class="text-subtitle2">เวลา 15.00</div>
+      </q-card-section>
 
-      <q-input v-model="date" filled type="date" hint="Native date" />
-       <q-btn color="primary" label="Submit" />
-    </div>
-  </div>
+      <q-separator />
+
+      <q-card-actions align="right">
+        <q-btn flat>ยกเลิก</q-btn>
+      </q-card-actions>
+    </q-card>
+     </div>
  
 
     <q-page-container>

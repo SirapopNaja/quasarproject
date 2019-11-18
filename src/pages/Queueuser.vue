@@ -1,19 +1,19 @@
 <!----------Make By YourName---------------->
  <template>
 <div>
-    <formlistqueue/>
+    <formQueueuser/>
     
 </div>
 </template>
 
     <script>
     import { get,sync,call } from "vuex-pathify"; 
-    import formlistqueue from "../components/listqueue";
+    import formQueueuser from "../components/Queueuser";
 export default {
     name: 'Root',
     /*-------------------------Load Component---------------------------------------*/
     components: {
-        formlistqueue
+        formQueueuser
     },
   /*-------------------------Set Component---------------------------------------*/
 props:{

@@ -13,7 +13,7 @@
       </q-toolbar>
 
       <q-tabs align="left">
-        <q-route-tab to="/listqueue" label="ตารางคิว" />
+        <q-route-tab to="/homeadmin" label="ตารางคิว" />
         <q-route-tab to="/petitionQueue" label="คำร้อง" />
         <q-route-tab to="/listpetion" label="คิวที่จอง" />
       </q-tabs>

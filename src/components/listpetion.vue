@@ -13,7 +13,7 @@
       </q-toolbar>
 
       <q-tabs align="left">
-        <q-route-tab to="/listqueue" label="ตารางคิว" />
+        <q-route-tab to="/homeadmin" label="ตารางคิว" />
         <q-route-tab to="/petitionQueue" label="คำร้อง" />
         <q-route-tab to="/listpetion" label="คิวที่จอง" />
       </q-tabs>
@@ -22,19 +22,19 @@
     <q-list dense bordered padding class="rounded-borders">
       <q-item clickable v-ripple>
         <q-item-section>
-          AB011
+          AB011 เวลา 16.00
         </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section>
-           AB018
+           AB018 เวลา 15.00
         </q-item-section>
       </q-item>
 
       <q-item clickable v-ripple>
         <q-item-section>
-           AB019
+           AB019 เวลา 17.00
         </q-item-section>
       </q-item>
     </q-list>

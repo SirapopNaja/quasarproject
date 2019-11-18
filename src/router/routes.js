@@ -43,11 +43,11 @@ const routes = [
     component: () => import('../pages/listpetion')
   },
   {
-    path: '/listqueue',
-    name:'listqueue',
-    component: () => import('../pages/listqueue')
+    path: '/Queueuser',
+    name:'Queueuser',
+    component: () => import('../pages/Queueuser')
   },
-
+ 
 ]
 
 // Always leave this as last one
